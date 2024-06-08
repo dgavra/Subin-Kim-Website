@@ -1,0 +1,389 @@
+/* Hero Section */
+
+#testing {
+    width:100%;
+    height: calc(100vh - 60px);
+    background-color: blueviolet;
+    margin-top: 60px;
+
+    background-image: url(Subject.png), url(star.jpg);
+    background-size: 50vh, cover;
+    background-repeat: no-repeat;
+    background-position: bottom left calc(50% + 10px), center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 330px;
+}
+
+main .main-intro h1{
+    font-size: 96px;
+    line-height: 106px;
+}
+
+main p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+main a{
+    margin-top:30px;
+    font-size: 18px;
+    display: block;
+    background-color: rgb(66, 63, 63);
+    padding: 10px 20px;
+    width: fit-content;
+}
+
+main .main-reasons p {
+    font-size: 50px;
+    line-height: 70px;
+    border-left: 4px solid white;
+    padding-left: 20px;
+    margin: 40px 0px;
+}
+
+main .main-reasons p:nth-child(1) {
+    margin-left: 0;
+}
+
+main .main-reasons p:nth-child(2) {
+    margin-left: 20px;
+}
+
+main .main-reasons p:nth-child(3) {
+    margin-left: 40px;
+}
+
+/*
+main .main-reasons p:nth-child(1) {
+    margin-left: calc((n - 1) * 20px);
+}*/
+
+main .main-intro{
+    padding-bottom: 8vh;
+}
+
+main .main-reasons{
+    padding-bottom: 8vh;
+}
+
+/* Category Section */
+
+.index-category{
+    width: 100%;
+    padding: 30px 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 5px;
+    flex-wrap: wrap;
+}
+
+.index-category p{
+    flex-basis: 100%;
+    text-align: center;
+    padding: 20px 20px;
+    color: #000;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.index-category-box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(19, 20, 111);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+}
+
+.index-category-box:nth-child(2){
+    background-image: url(kimchi.jpeg)
+}
+
+.index-category-box:nth-child(3){
+    background-image: url(slime.png)
+}
+
+.index-category-box:nth-child(4){
+    background-image: url(airplane.jpg);
+    background-size: 240%;
+    background-position: 45% 42%;
+}
+
+.index-category-box:nth-child(5){
+    background-image: url(sleep.jpg)
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color:#8863e6;
+    opacity:0.4;
+    transition: all ease-in-out 200ms;
+}
+
+.index-category-box:hover .dark-overlay{
+    opacity:0;
+}
+
+.index-category-box h3{  
+    font-size: 30px;
+    line-height: 35px;
+    color: white;
+    font-family: "Cute Font";
+    position: center;
+    text-shadow: -2px -4px 4px #000;
+    z-index: 100;
+}
+
+/* About Section */
+
+.index-about{
+    width: 100%;
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    background-color: #6363e6;
+}
+
+.index-about-img img{
+    border-radius: 300px;
+    width: 300px;
+}
+
+.index-about h2{
+    color: white;
+    font-size: 70px;
+    font-family: "Cute Font";
+}
+
+.index-about p{
+    color: white;
+    font-size: 20px;
+    font-family: "Cute Font";
+}
+
+.index-about-text{
+    margin-bottom: 50px;
+    flex-basis: 455px; 
+}
+
+.index-about-skill{
+    flex-basis:350px;
+}
+
+.index-about-skill-bar{
+    width: calc(100%-8px);
+    border: 5.5px solid black;
+    height: 20px;
+}
+
+.index-about-skill-bar-fill{
+    width: calc(100%-8px);
+    height: 100%;
+    background-color: pink;
+}
+
+.ct{
+    width: 90%;
+}
+
+.iq{
+    width: 95%;
+}
+
+.eq{
+    width: 32%;
+}
+
+/* main 2 */
+
+.container1{
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.title1{
+    margin-top: 45px;
+    color: white;
+    font-size: 25px;
+    font-family: "Cute Font";
+    text-align: center;
+}
+
+.photo-gallery{
+    margin-top: 40px;
+    display:flex;
+    gap: 20px;
+}
+
+.column{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+#photos-body{
+    background-color: #230866;
+    background-image: url(subin-web.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+
+  }
+
+/* why */
+
+#newdiv {
+    margin-top: 60px;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    position: relative; /* Add position: relative */
+}
+
+.photo-gallery1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.column1 {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+}
+
+.column1:nth-child(1) {
+    background-image: url(bf.jpg);
+}
+
+.column1:nth-child(2) {
+    background-image: url(zb.png);
+}
+
+.column1:nth-child(3) {
+    background-image: url(dg.jpg);
+}
+
+.column1 h3 {
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Cute Font";
+    text-shadow: 
+        2px 2px 10px rgba(203, 70, 230, 0.5),
+        -2px -2px 10px rgba(203, 70, 230, 0.5); /* Inner shadow */; 
+}
+
+.dark-overlay1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #8863e6;
+    opacity: 0.25;
+    transition: all ease-in-out 200ms;
+    z-index: 2; /* Ensure the overlay is above the background image */
+}
+
+/* gangaji */
+
+#newdiv1 {
+    margin-top: 60px;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    position: relative; /* Add position: relative */
+}
+
+.idk {
+    width: 100%;
+    height: calc((100vh - 60px)*0.5);
+    display: flex;
+    flex-direction: row;
+}
+
+.idk1 {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.idk1 img{
+    width: 90%;
+    height: 85%;
+    border-radius: 50px;
+    border: 2px solid purple;
+}
+h4{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Cute Font";
+    padding:0px 40px ;
+    text-shadow: 
+    2px 2px 10px rgba(203, 70, 230, 0.5),
+    -2px -2px 10px rgba(203, 70, 230, 0.5); /* Inner shadow */; 
+}
+
+h5{
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 100px;
+    font-family: "Cute Font";
+    text-shadow: 
+    2px 2px 10px rgba(203, 70, 230, 0.5),
+    -2px -2px 10px rgba(203, 70, 230, 0.5); /* Inner shadow */; 
+}
+
+#damnit{
+    background-image: url(sp.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
